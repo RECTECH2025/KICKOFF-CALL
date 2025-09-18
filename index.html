@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahiamar Kickoff Checklist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .section-header {
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .item-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .item-card:hover {
+            transform: translateY(-2px);
+        }
+        .copy-btn {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+        }
+        .copy-btn:hover {
+            background-color: #4338ca;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="container mx-auto">
+        <div class="section-header">
+            <h1 class="text-3xl font-bold">Bahiamar Kickoff Checklist</h1>
+            <p class="mt-2 text-sm font-medium">A dynamic tool for our project kickoff call and execution plan.</p>
+        </div>
+
+        <div class="space-y-8 mb-8">
+
+            <!-- Part 1 -->
+            <div class="item-card">
+                <h2 class="text-xl font-bold text-gray-800">Part 1: Review of Provided Information & Project Vision</h2>
+                <p class="text-gray-600 mt-2">Ensure we are aligned on the project's foundation and confirm documentation is accurate.</p>
+                <div class="mt-4 space-y-2">
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Project & Vision Confirmation:** Confirm the core vision, target market, and proposed amenities.</span>
+                    </label>
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Document & Data Confirmation:** Confirm the status and validity of legal documents, existing financial projections, and past appraisals.</span>
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <textarea class="w-full h-24 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Add notes here for Part 1..."></textarea>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div class="item-card">
+                <h2 class="text-xl font-bold text-gray-800">Part 2: Gap Analysis & Information Gathering</h2>
+                <p class="text-gray-600 mt-2">Obtain the latest information not available in the attached files to make our analysis current and credible.</p>
+                <div class="mt-4 space-y-2">
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Financial & Operational Updates:** Request current investment, land/construction costs, and operational assumptions.</span>
+                    </label>
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Market & Strategy Updates:** Discuss competitive landscape and current sales strategy.</span>
+                    </label>
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Web-Based Information Search:** Research up-to-date tourism data and luxury hospitality trends (Internal team action).</span>
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <textarea class="w-full h-24 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Add notes here for Part 2..."></textarea>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div class="item-card">
+                <h2 class="text-xl font-bold text-gray-800">Part 3: Final Alignment & Next Steps</h2>
+                <p class="text-gray-600 mt-2">Ensure a clear path forward and define responsibilities.</p>
+                <div class="mt-4 space-y-2">
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Confirm Main Point of Contact & Communication Cadence:** Designate a single point of contact from the client and agree on a meeting schedule.</span>
+                    </label>
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Formal Action Items:** Ensure the client understands what data to provide, and we are ready to begin work.</span>
+                    </label>
+                    <label class="flex items-center text-gray-800 cursor-pointer">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600 rounded-md">
+                        <span class="ml-2">**Project Sign-off:** Conclude the call with a mutual agreement to proceed.</span>
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <textarea class="w-full h-24 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Add notes here for Part 3..."></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center mt-8 relative">
+            <button id="copy-btn" class="copy-btn font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                Copy Checklist to Clipboard
+            </button>
+            <div id="tooltip" class="tooltip text-sm">Copied!</div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('copy-btn').addEventListener('click', function() {
+            const checklistContent = `
+# Kickoff Call Checklist: Bahiamar Resort Project
+
+**Date:** ${new Date().toLocaleDateString()}
+**Attendees:** Ricaurte Energy Capital Team & Infratur, S.A. de C.V. Stakeholders
+**Objective:** Formally initiate the project, confirm existing data, and identify key inputs required for the Feasibility Study, Business Plan, and Financial Model.
+
+---
+
+## **Part 1: Review of Provided Information & Project Vision**
+${Array.from(document.querySelectorAll('.item-card:nth-of-type(1) input[type="checkbox"]')).map(checkbox => {
+    const isChecked = checkbox.checked ? '[x]' : '[ ]';
+    const text = checkbox.nextElementSibling.innerText;
+    return `${isChecked} ${text}`;
+}).join('\n')}
+**Notes:**
+${document.querySelector('.item-card:nth-of-type(1) textarea').value}
+
+---
+
+## **Part 2: Gap Analysis & Information Gathering**
+${Array.from(document.querySelectorAll('.item-card:nth-of-type(2) input[type="checkbox"]')).map(checkbox => {
+    const isChecked = checkbox.checked ? '[x]' : '[ ]';
+    const text = checkbox.nextElementSibling.innerText;
+    return `${isChecked} ${text}`;
+}).join('\n')}
+**Notes:**
+${document.querySelector('.item-card:nth-of-type(2) textarea').value}
+
+---
+
+## **Part 3: Final Alignment & Next Steps**
+${Array.from(document.querySelectorAll('.item-card:nth-of-type(3) input[type="checkbox"]')).map(checkbox => {
+    const isChecked = checkbox.checked ? '[x]' : '[ ]';
+    const text = checkbox.nextElementSibling.innerText;
+    return `${isChecked} ${text}`;
+}).join('\n')}
+**Notes:**
+${document.querySelector('.item-card:nth-of-type(3) textarea').value}
+            `;
+
+            navigator.clipboard.writeText(checklistContent).then(function() {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.classList.add('show');
+                setTimeout(() => {
+                    tooltip.classList.remove('show');
+                }, 1500);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
+
